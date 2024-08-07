@@ -1,0 +1,27 @@
+.Pokecard-div {
+  width: 60%;
+  margin: 100px auto;
+}
+
+.Pokecard-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px; /* Optional: Adds space between grid items */
+}
+
+.Pokecard-list-item {
+  background-color: rgb(224, 219, 219);
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+  color: darkslategray;
+}
+
+.Pokecard-name {
+  color: blue;
+  font-weight: 800;
+  font-size: large;
+}

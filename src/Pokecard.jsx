@@ -1,9 +1,21 @@
-const Pokecard = ({name, image, type}) => {
+import Pokedex from "./Pokedex";
+import "./Pokecard.css"
+
+
+const Pokecard = ({}) => {
+  const pokemons = Pokedex;
   return (
     <>
-      <h3>{name}</h3>
-      <img src={image} alt=""></img>
-      <p>{type}</p>
+<div className="Pokecard-div">
+  <ul className="Pokecard-list">
+    {pokemons.map(p=> <li className="Pokecard-list-item">
+     <p className="Pokecard-name">{p.name}</p> 
+     <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.id}.png`} alt="pokemon" />
+     <p>Type: {p.type}</p>
+     <p>EXP:{p.base_experience} </p>
+    </li>)}
+  </ul>
+</div>
     </>
   );
 };

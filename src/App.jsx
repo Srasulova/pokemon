@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-<Pokecard name="limon" image="" type="type" />
+<Pokecard/>
     </>
   )
 }
